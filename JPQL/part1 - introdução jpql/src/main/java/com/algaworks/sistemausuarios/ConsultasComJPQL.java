@@ -66,11 +66,13 @@ public class ConsultasComJPQL {
         listaNom.forEach(nome -> System.out.println(nome));
     }
 
-    public static void primeirasConsultas(EntityManager entityManager) {
-        String jpql = "select u from Usuario u";
-        TypedQuery<Usuario> typedQuery = entityManager.createQuery(jpql, Usuario.class);
-        List<Usuario> lista = typedQuery.getResultList();
-        lista.forEach(u -> System.out.println(u.getId() + ", " + u.getNome()));
+    public static void primeirasConsultas(EntityManager entityManager) { // instância do entitymanager
+        String jpql = "select u from Usuario u"; // selecionar registro do usuário da entidade usuario
+        TypedQuery<Usuario> typedQuery = entityManager.createQuery(jpql, Usuario.class); // query tipada
+                                                                   // primeiro parametro: a consulta, segundo parametro o que retorna
+        List<Usuario> lista = typedQuery.getResultList(); // Lista de usuario pegando o resultado do typedQuery
+        lista.forEach(u -> System.out.println(u.getId() + ", " + u.getNome())); //get são os gets e setters
+        // retorna queries de todas as classes que a classe usuario depende, para que isso não aconteça é preciso usar o join fetch
 
         String jpqlSing = "select u from Usuario u where u.id = 1";
         TypedQuery<Usuario> typedQuerySing = entityManager.createQuery(jpqlSing, Usuario.class);
