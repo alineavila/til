@@ -80,8 +80,8 @@ public class ConsultasComJPQL {
         System.out.println(usuario.getId() + ", " + usuario.getNome());
 
         String jpqlCast = "select u from Usuario u where u.id = 1";
-        Query query = entityManager.createQuery(jpqlCast);
-        Usuario usuario2 = (Usuario) query.getSingleResult();
+        Query query = entityManager.createQuery(jpqlCast); // query não tipada
+        Usuario usuario2 = (Usuario) query.getSingleResult(); // tem que fazer um cast por isso o (Usuario)
         System.out.println(usuario2.getId() + ", " + usuario2.getNome());
     }
 }
