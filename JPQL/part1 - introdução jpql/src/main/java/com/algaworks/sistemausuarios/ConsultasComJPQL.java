@@ -47,10 +47,12 @@ public class ConsultasComJPQL {
         listaArr.forEach(arr -> System.out.println(String.format("%s, %s, %s", arr)));
 
 
-        String jpqlDto = "select new com.algaworks.sistemausuarios.dto.UsuarioDTO(id, login, nome)" +
-                "from Usuario";
+        String jpqlDto = "select new com.algaworks.sistemausuarios.dto.UsuarioDTO(id, login, nome)" + // no select
+                // precisa passar o caminho completo com o pacote e o nome da classe, entre parêntese
+                // é como se fosse um construtor
+                "from Usuario"; // Enviar retorno da consulta para um DTO
         TypedQuery<UsuarioDTO> typedQueryDto = entityManager.createQuery(jpqlDto, UsuarioDTO.class);
-        List<UsuarioDTO> listaDto = typedQueryDto.getResultList();
+        List<UsuarioDTO> listaDto = typedQueryDto.getResultList(); // uma lista do DTO
         listaDto.forEach(u -> System.out.println("DTO: " + u.getId() + ", " + u.getNome()));
     }
 
