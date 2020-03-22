@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36bdd9a7-9784-4a93-aa39-8a5af822649c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ZSu3AqkoFdBIkySDiprb0YhMpy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aprendendojpa" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36bdd9a7-9784-4a93-aa39-8a5af822649c" name="Default Changelist" comment="" />
+      <created>1584844623572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584844623572</updated>
+      <workItem from="1584844631981" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1866" y="80" key="FileChooserDialogImpl" timestamp="1584844672073">
+      <screen x="1366" y="-125" width="1440" height="900" />
+    </state>
+    <state x="1866" y="80" key="FileChooserDialogImpl/0.0.1366.768/1366.-125.1440.900@1366.-125.1440.900" timestamp="1584844672073" />
+    <state x="1782" y="149" key="com.intellij.ide.util.TipDialog" timestamp="1584844645999">
+      <screen x="1366" y="-125" width="1440" height="900" />
+    </state>
+    <state x="1782" y="149" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.-125.1440.900@1366.-125.1440.900" timestamp="1584844645999" />
+  </component>
+</project>
