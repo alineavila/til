@@ -24,10 +24,10 @@ public class ConsultasComJPQL {
     }
 
     public static void passandoParametros(EntityManager entityManager) {
-        String jpql = "select u from Usuario u where u.id = :idUsuario";
+        String jpql = "select u from Usuario u where u.id = :idUsuario"; // dizendo que a consulta espera um parâmetro
         TypedQuery<Usuario> typedQuery = entityManager.
                 createQuery(jpql, Usuario.class).
-                setParameter("idUsuario", 1);
+                setParameter("idUsuario", 1); // passando o parâmetro pra consulta
         Usuario usuario = typedQuery.getSingleResult();
         System.out.println(usuario.getId() + ", " + usuario.getNome());
 
@@ -35,7 +35,7 @@ public class ConsultasComJPQL {
         String jpqlLog = "select u from Usuario u where u.login = :loginUsuario";
         TypedQuery<Usuario> typedQueryLog = entityManager.
                 createQuery(jpqlLog, Usuario.class).
-                setParameter("loginUsuario", "ria");
+                setParameter("loginUsuario", "ria"); // primeiro parametro: nome do parametro, segundo parametro o valor de fato
         Usuario usuarioLog = typedQueryLog.getSingleResult();
         System.out.println(usuarioLog.getId() + ", " + usuarioLog.getNome());
     }
