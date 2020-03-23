@@ -16,7 +16,7 @@ public class Cliente {
     }
 
     public Cliente(long id, String nome) {
-        this.id = id;
+
         this.nome = nome;
     }
 
