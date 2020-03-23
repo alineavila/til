@@ -15,13 +15,12 @@ public class Cliente {
 
     }
 
-    public Cliente(long id, String nome) {
+    public Cliente(String nome) {
 
         this.nome = nome;
     }
 
     @Id // primary key
-    @GeneratedValue // dizendo que esse valor será um valor gerado
     @Column(name="id")
     private long id;
 

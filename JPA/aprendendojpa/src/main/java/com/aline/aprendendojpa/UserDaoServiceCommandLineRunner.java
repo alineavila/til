@@ -27,7 +27,7 @@ public class UserDaoServiceCommandLineRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception { // metodo obrigatorio para o CommandLineRunner
-        Cliente cliente = new Cliente (200000,"teste CLR"); // para salvar esse cliente precisamos do serviço que se conecta com o bd
+        Cliente cliente = new Cliente ("teste vendo sql"); // para salvar esse cliente precisamos do serviço que se conecta com o bd
         long insert = clienteDAOService.insert(cliente); // pq retorna um id long
         log.info("Novo Cliente foi criado: " + cliente); // log da classe
 
