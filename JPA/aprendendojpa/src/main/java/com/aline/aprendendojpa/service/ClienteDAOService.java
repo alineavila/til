@@ -22,7 +22,7 @@ public class ClienteDAOService { // sigla para data access
         // Toda alteração no banco é uma transação
 
         // abre a transção e faz a modificação/ação
-        entityManager.persist(cliente); // metodo usado para criar uma instancia e persisti-la
+//        entityManager.persist(cliente); // metodo usado para criar uma instancia e persisti-la
         // fecha a transação
         // para isso precisamos dizer para o Spring que é uma transação passando a anotação @Transactional
         return cliente.getId();
