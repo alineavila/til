@@ -3,13 +3,12 @@ package com.aline.aprendendojpa.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
 @Table (name="cliente")
+@Entity
 public class Cliente {
 
     public Cliente() { // JPA espera um construtor default sem parâmetros
@@ -21,7 +20,8 @@ public class Cliente {
         this.nome = nome;
     }
 
-    @Id
+    @Id // primary key
+    @GeneratedValue // dizendo que esse valor será um valor gerado
     @Column(name="id")
     private long id;
 
